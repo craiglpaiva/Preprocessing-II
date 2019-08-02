@@ -1,1 +1,22 @@
 // Mixins in here
+
+.btn {
+  max-width: 150px;
+  font-size: 13px;
+  text-align: center;
+  margin-left: 20px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+
+  @media @mobile {
+    margin: 0px auto;
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: darken(teal, 5%);
+  }
+}
